@@ -1,0 +1,28 @@
+# Enable Rewrite Engine
+
+RewriteEngine On
+
+# Redirect all errors to the homepage
+
+ErrorDocument 401 https://cethut.com/
+ErrorDocument 403 https://cethut.com/
+ErrorDocument 404 https://cethut.com/
+ErrorDocument 500 https://cethut.com/
+
+# Redirect to HTTPS and non-www in a single rule
+
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} ^www\.cethut\.com$ [NC]
+RewriteRule ^ https://cethut.com%{REQUEST_URI} [L,R=301]
+
+# Redirect www to non-www if already using HTTPS
+
+RewriteCond %{HTTPS} on
+RewriteCond %{HTTP_HOST} ^www\.cethut\.com$ [NC]
+RewriteRule ^ https://cethut.com%{REQUEST_URI} [L,R=301]
+
+# Ensure no further processing if already at the correct URL
+
+RewriteCond %{HTTPS} on
+RewriteCond %{HTTP_HOST} ^cethut\.com$ [NC]
+RewriteRule ^ - [L]

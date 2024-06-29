@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu-CETHUT</title>
+    <link rel="shortcut icon" href="./assets/Shared/Fav_5.webp" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="./assets/animate.css"
+  />
+  <link
+  rel="stylesheet"
+  href="menu.css"
+/>
+  <link rel="stylesheet" href="share.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+</head>
+<body class="body">
+    
+    <header>
+        <nav class="pc_navbar container">
+            <a href="/" class="home_ancore"><img src="./assets/Shared/cethut_logo.webp" alt="Logo" class="navbar_logo"></a>
+            
+            <button class="menu_toggle">
+                <div class="menu_icon"></div>
+            </button>
+            <div class="social_media_icons">
+                <a href="menu.html" class="nav_menu">Our Menu</a>
+                <a href="https://gofood.co.id/en/jakarta/restaurant/cethut-sampoerna-strategic-square-272e0da8-43a2-4ab2-ae65-c79b6b57484f" class="nav_menu">GoFood</a>
+                <a href="https://food.grab.com/id/id/restaurant/cethut-sampoerna-strategic-square-delivery/IDGFSTI00002uo3" class="nav_menu">Grabfood</a>
+                <a class="nav_social" href="https://www.instagram.com/cethut.kedai/?hl=en"><img src="./assets/Shared/Insta.svg" alt="Instagram Icon"></a>
+            </div>
+            <div class="mobile_menu">
+                <a href="menu.html" class="nav_menu nav_menu_mob">Our Menu</a>
+                <a href="https://gofood.co.id/en/jakarta/restaurant/cethut-sampoerna-strategic-square-272e0da8-43a2-4ab2-ae65-c79b6b57484f" class="nav_menu nav_menu_mob">GoFood</a>
+                <a href="https://food.grab.com/id/id/restaurant/cethut-sampoerna-strategic-square-delivery/IDGFSTI00002uo3" class="nav_menu nav_menu_mob">Grabfood</a>
+                <a class="nav_social" href="https://www.instagram.com/cethut.kedai/?hl=en"><img src="./assets/Shared/Insta.svg" alt="Instagram Icon"></a>
+            </div>
+        </nav>
+    </header>
+
+ 
+     
+        <script src="js/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const menuToggle = document.querySelector('.menu_toggle');
+                const mobileMenu = document.querySelector('.mobile_menu');
+        
+                menuToggle.addEventListener('click', function () {
+                    menuToggle.classList.toggle('active');
+                    mobileMenu.classList.toggle('show');
+                });
+            });
+        </script>
+        
+        
+    </body>
+    </html>

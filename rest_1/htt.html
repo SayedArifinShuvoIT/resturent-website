@@ -1,0 +1,14 @@
+ErrorDocument 401 https://www.arcelts.com/
+ErrorDocument 403 https://www.arcelts.com/
+ErrorDocument 404 https://www.arcelts.com/
+ErrorDocument 500 https://www.arcelts.com/
+
+RewriteEngine On
+
+# Redirect non-www to www
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule ^ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Ensure HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]

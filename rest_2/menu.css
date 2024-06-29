@@ -1,0 +1,280 @@
+:root {
+    --white:#fff;
+    --black:#000;
+    --primary_color:#074173;
+    --secondary_color:#5DEBD7;
+    --text_grey:#505050;
+    --grey_bg:#EDEDED;
+}
+
+.full_page {
+    background-color: var(--primary_color);
+}
+.menu_hero {
+    padding: 125px 0 171px;
+    background-image: linear-gradient(to bottom, #07417300 0%,#074173 100% ),url(./assets/menu/header_bg.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.menu_heading {
+    padding: 40px 133px;
+    background-image: url(./assets/menu/menu_hero_heading_bg.webp);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-size: 60px;
+    color: var(--white);
+    text-shadow: 0 5px 2px #00000030;
+}
+.menu_card_container {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -125px;
+    flex-wrap: wrap;
+}
+.menu_page_card{
+    text-align: center;
+    width: calc(25% - 8px);
+    transition: all .5s ease-in-out;
+}
+.menu_card_text_div:hover{
+    background-color: #505050;
+}
+.menu_card_img {
+    max-width: 260px;
+    width: 100%;
+    
+
+}
+
+
+
+.menu_card_text_price {
+    font-size: 16px;
+    color: var(--primary_color);
+    padding: 8px 12px;
+    background-color: var(--secondary_color);
+    border-radius: 10px 10px 0 0;
+    width: fit-content;
+    text-align: center;
+}
+.menu_card_text_div {
+    padding: 10px;
+    border: 2px solid var(--white);
+    border-radius: 10px;
+    text-align: center;
+    background-color: var(--primary_color);
+    width: 100%;
+    transition: all .5s ease;
+}
+.menu_card_text_heading {
+    color: var(--white);
+    font-size: 22px;
+}
+
+.menu_card_text_subheading {
+    color: var(--white);
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+}
+.menu_card_texts {
+    display: flex;
+    flex-direction: column;
+   z-index: 50;
+    justify-content: center;
+    align-items: center;
+    margin-top: -85px;
+   
+}
+
+.menu_list_heading_div {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 30px 0;
+}
+.menu_list_heading {
+    width: 100%;
+    text-align: center;
+    background-color: var(--secondary_color);
+}
+
+.menu_list_heading_middle {
+    font-size: 40px;
+    color: var(--primary_color);
+    padding: 7px 0 3px;
+    letter-spacing: 12px;
+    
+}
+.menu_list_heading_left {
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%, 10% 48%);
+}
+.menu_list_heading_right {
+    clip-path: polygon(0% 0%, 100% 0, 90% 52%, 100% 100%, 0% 100%);
+}
+.menu_lists {
+    display: flex;
+    gap: 28px;
+    justify-content:center;
+}
+.menu_list {
+    width: 100%;
+    border: 1px solid var(--white);
+}
+
+.menu_list_item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 14px;
+    color: var(--white);
+    font-size: 22px;
+    gap: 15px;
+}
+.menu_list_item_name {
+    text-transform: capitalize;
+}
+.menu_list_item_price {
+    text-transform: uppercase;
+    text-wrap: nowrap;
+}
+.menu_list_item:not(:last-child) {
+    border-bottom: 1px solid var(--white);
+}
+
+.drink_img {
+    border-radius: 50%;
+    border: 6px solid var(--secondary_color);
+}
+
+.drinks_card_container {
+    margin-top: 60px;
+}
+.spone_border_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0 12px;
+}
+.menu_list_border {
+    max-height: 41px;
+    
+}
+
+.top_footer {
+    padding: 65px 0 117px;
+    background-image: linear-gradient(to top, #07417300 0%, #07417397 87%,#074173 100%), url(./assets/menu/footer_bg.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   display: flex;
+   justify-content: center;
+}
+.top_footer_heading {
+    text-align: center;
+    font-size: 60px;
+    line-height: 85px;
+    color: var(--white);
+    max-width: 805px;
+    text-transform: uppercase;
+    text-shadow: 0 5px 2px #00000030;
+}
+
+.top_footer_heading span {
+    font-weight: 600;
+    color: var(--primary_color);
+    background-color: var(--secondary_color);
+    padding: 13px 13px 7px;
+    border-radius: 20px;
+    text-wrap: nowrap;
+}
+
+@media  screen and (max-width:1150px) {
+    .menu_card_text_heading {
+        font-size: 18px;
+    }
+}
+@media  screen and (max-width:991px) {
+    
+    .menu_lists{
+        flex-direction: column;
+        gap: 0;
+        
+    }
+   .fs {
+    border-bottom: none;
+   }
+    
+    .menu_page_card {
+        width: calc(50% - 5px);
+    }
+    .menu_heading {
+        font-size: 45px;
+    }
+    .menu_list_heading_middle {
+        font-size: 25px;
+    }
+    .menu_list_item {
+        font-size: 18px;
+    }
+    .top_footer_heading  {
+        font-size: 45px;
+        line-height: 70px;
+    }
+    .top_footer {
+        padding: 45px 0 65px;}
+        .menu_heading {
+            padding: 30px;
+        }
+        .menu_hero {
+            padding: 75px 0 150px;}
+}
+
+@media  screen and (max-width:700px){
+    .menu_list_heading_left ,.menu_list_heading_right {
+        display: none;
+    }
+    .top_footer_heading {
+        font-size: 35px;
+        line-height: 60px;
+        width: 80%;
+    }
+    .drinks_card_container {
+        margin-top: 30px;
+    }
+    .spone_border_div {
+        margin: 20px 0 5px;
+    }
+}
+@media  screen and (max-width:600px) {
+    .menu_heading {
+        font-size: 30px;
+    }
+    .menu_list_item {
+        font-size: 14px;
+    }
+    .menu_hero {
+        padding: 50px 0 135px;
+    }
+    
+}
+@media  screen and (max-width:500px) {
+    .menu_page_card {
+        width: 100%;
+    }
+    .menu_heading {
+        padding: 20px;
+    }
+    .top_footer_heading {
+        font-size: 25px;
+        line-height: 45px;
+    }
+    .top_footer {
+        padding: 30px 0 40px;
+    }
+}
+

@@ -9,55 +9,287 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-  
-
+    <link
+    rel="stylesheet"
+    href="./assets/animate.css"
+  />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 </head>
-<body>
-    <nav class="navbar">
+<body style="overflow-x: hidden;">
+    <nav class="navbar pc_only">
          <div class="container nav_container">
-            <img class="nav_img" src="./assets/Logo.png" alt="logo">
-            <p class="rest_name">Kulina Rasa</p>
-            <a href="#" class="main_button">Grab Food</a>
+            <a href="/"><img class="nav_img" src="./assets/logo_sate_pak_jede.webp" alt="logo"></a>
+            <p class="rest_name">Sate Pak Jede Special Kambing Muda, Bendungan Hilir</p>
+            <div class="nav_button"><a href="/menu.html" class="main_button">Our Menu</a>
+                <a href="https://gofood.co.id/en/jakarta/restaurant/sate-pak-jede-special-kambing-muda-bendungan-hilir-caaa45a2-0e4b-4244-b227-542502c95131" class="main_button">Grab Food</a></div>
          </div>
        
     </nav>
-    <div class="bottom_bar">
+    <div class="bottom_bar pc_only">
          <div class="social_container">
-            <a href="#" class="soical_ancore">
-                <img src="./assets/Facebook.svg" alt="" class="social_img">
-            </a>
-            <a href="#" class="soical_ancore">
+            
+            <a href="https://www.instagram.com/satepakjede/" class="soical_ancore">
                 <img src="./assets/Insta.svg" alt="" class="social_img">
             </a>
-            <a href="#" class="soical_ancore">
-                <img src="./assets/x.svg" alt="" class="social_img">
-            </a>
-            <a href="#" class="soical_ancore">
-                <img src="./assets/LinkedIn.svg" alt="" class="social_img">
-            </a>
-            <a href="#" class="soical_ancore">
-                <img src="./assets/Reddit.svg" alt="" class="social_img">
-            </a>
+            
          </div>
         
      </div>
-     <header class="hero_section">
+     <div class="mobile_navbar mobile_only">
+        <div class="container mobile_navbar_container">
+            <a href="/"><img src="./assets/logo_sate_pak_jede.webp" alt="small logo" class="mobile_navbar_logo"></a>
+            
+            <button id="toggleButton" class="hambergure_menu">☰</button>
+            <div id="overlay" class="overlay"></div>
+            <div id="mobileMenu" class="mobile_menu target">
+                <button  id="closeButton" class="close_button">✕</button>
+                <div class="mobile_menu_container">
+                    <div class="mobile_ancors">
+                        
+                        <a href="https://www.instagram.com/satepakjede/" class="soical_media_ancore_mob"><img src="./assets/Insta.svg" alt="Facebook" class="social_img"></a>
+                       
+                    </div>
+                    <a href="https://gofood.co.id/en/jakarta/restaurant/sate-pak-jede-special-kambing-muda-bendungan-hilir-caaa45a2-0e4b-4244-b227-542502c95131" class="main_button mobile_nav_button">Grab Food</a>
+                    <a href="/menu.html" class="main_button mobile_nav_button">Our Menu</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+     
+     <header class="hero_section wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.5s">
         <div class="container hero_container">
             <div class="hero_left ">
                 <h1 class="hero_heading">Enjoy the authentic
                     taste of Indonesia</h1>
-                    <div class="">
-                        <a href="#" class="main_button">Grab Food</a>
+                    <div class="hero_button">
+                        <a href="https://gofood.co.id/en/jakarta/restaurant/sate-pak-jede-special-kambing-muda-bendungan-hilir-caaa45a2-0e4b-4244-b227-542502c95131" class="main_button hero_btn">Grab Food</a>
+                        <a class="main_button_2" href="https://linktr.ee/satepakjede">Reservasi</a>
                     </div>
-
             </div>
             <div class="hero_right">
-                <img src="./assets/hero image.png" alt="hero Image" class="hero_img">
+                <img src="./assets/sate_pak_jede.webp" alt="hero Image" class="hero_img">
             </div>
 
         </div>
 
      </header>
-     <div class="menu_section"></div>
+     <div class="menu_section wow fadeInUp">
+        <div class="container menu_container">
+            <h2 class="menu_heading">Our Menu</h2>
+            <div class="menu_cards">
+                <div class="menu_card">
+                    <div class="menu_label">
+                        <p class="price">Rp. <br/>52k</p>
+                    </div>
+                    <img src="./assets/Sate Goreng - 52.000.webp" alt="Menu Image" class="menu_img">
+                    <div class="menu_texts">
+                        <h3 class="menu_headline">sate goreng</h3>
+                       
+                        
+                    </div>
+                </div>
+                <div class="menu_card">
+                    <div class="menu_label">
+                        <p class="price">Rp. <br/>52k</p>
+                    </div>
+                    <img src="./assets/Sate Klathak - Rp 52.000.webp" alt="Menu Image" class="menu_img">
+                    <div class="menu_texts">
+                        <h3 class="menu_headline">sate klathak</h3>
+                       
+                        
+                    </div>
+                </div>
+                <div class="menu_card">
+                    <div class="menu_label">
+                        <p class="price">Rp. <br/>50k</p>
+                    </div>
+                    <img src="./assets/Tengkleng - Rp 50.000.webp" alt="Menu Image" class="menu_img">
+                    <div class="menu_texts">
+                        <h3 class="menu_headline">tengkleng</h3>
+                       
+                        
+                    </div>
+                </div>
+                <div class="menu_card">
+                    <div class="menu_label">
+                        <p class="price">Rp. <br/>29k</p>
+                    </div>
+                    <img src="./assets/Soto Kambing - Rp 29.000.webp" alt="Menu Image" class="menu_img">
+                    <div class="menu_texts">
+                        <h3 class="menu_headline">soto kambing</h3>
+                       
+                       
+                    </div>
+                </div>
+                <div class="menu_card">
+                    <div class="menu_label">
+                        <p class="price">Rp. <br/>57k</p>
+                    </div>
+                    <img src="./assets/Nasi Goreng Kambing - Rp 57.000.webp" alt="Menu Image" class="menu_img">
+                    <div class="menu_texts">
+                        <h3 class="menu_headline">nasi goreng kambing</h3>
+                       
+                        
+                    </div>
+                </div>
+                <div class="menu_card">
+                    <div class="menu_label">
+                        <p class="price">Rp. <br/>47k</p>
+                    </div>
+                    <img src="./assets/Gule Daging- Rp 47.000.webp" alt="Menu Image" class="menu_img">
+                    <div class="menu_texts">
+                        <h3 class="menu_headline">gule daging</h3>
+                       
+                        
+                    </div>
+                </div>
+                <div class="menu_card">
+                    <div class="menu_label">
+                        <p class="price">Rp. <br/>50k</p>
+                    </div>
+                    <img src="./assets/Bakmi Goreng - Rp 50.000.webp" alt="Menu Image" class="menu_img">
+                    <div class="menu_texts">
+                        <h3 class="menu_headline">bakmi goreng</h3>
+                       
+                        
+                    </div>
+                </div>
+                <div class="menu_card">
+                    <div class="menu_label">
+                        <p class="price">Rp. <br/>54k</p>
+                    </div>
+                    <img src="./assets/Bihun Goreng - Rp 54.000.webp" alt="Menu Image" class="menu_img">
+                    <div class="menu_texts">
+                        <h3 class="menu_headline">bihun goreng</h3>
+                       
+                        
+                    </div>
+                </div>
+                <a href="/menu.html" class="main_button">Lihat Menu Lengkap</a>
+            </div>
+            
+        </div>
+     </div>
+     <div class="contact_form_container wow fadeInUp">
+        <h2 class="contact_form_heading">Contact Us</h2>
+        <form action="#" class="contact_us_form">
+            <div class="inputs">
+                <div class="input_left">
+                    <input type="text" class="text_input" placeholder="Name">
+                    <input type="text" class="text_input" placeholder="Phone Number">
+                    <input type="text" class="text_input" placeholder="Email">
+                </div>
+                <div class="input_right">
+                    <textarea name="" id="" class="input_textarea" placeholder="Your Message"></textarea>
+                </div>
+            </div>
+            <button type="submit" class="form_submit_button">Send Now</button>
+        </form>
+     </div>
+     <div class="info_section">
+        <div class="container info_container">
+               <div class="info_texts wow fadeInLeft">
+                <h3 class="info_heading">Open Hours</h3>
+                <div class="diamond_bottom_border"></div>
+                <div class="timelines">
+                    <div class="timeline">
+                      <p class="day_name">Monday:</p>
+                      <p class="time">11:00AM-9:00 PM</p>
+                    </div>
+                    <div class="timeline">
+                        <p class="day_name">Tuesday:</p>
+                        <p class="time">11:00AM-9:00 PM</p>
+                      </div>
+                      <div class="timeline">
+                        <p class="day_name">Wednesday:</p>
+                        <p class="time">11:00AM-9:00 PM</p>
+                      </div>
+                      <div class="timeline">
+                        <p class="day_name">Thursday:</p>
+                        <p class="time">11:00AM-9:00 PM</p>
+                      </div>
+                      <div class="timeline">
+                        <p class="day_name">Friday:</p>
+                        <p class="time">11:00AM-9:00 PM</p>
+                      </div>
+                      <div class="timeline">
+                        <p class="day_name">Saturday:</p>
+                        <p class="time">11:00AM-9:00 PM</p>
+                      </div>
+                      <div class="timeline">
+                        <p class="day_name">Sunday:</p>
+                        <p class="time">11:00AM-9:00 PM</p>
+                      </div>
+                </div>
+                <div class="diamond_bottom_border"></div>
+                <div class="single_content">
+                  <img src="./assets/phone.svg" alt="Mobile Phone icon" class="simgle_content_icon">
+                  <p class="single_content_text">+62811250739</p>
+                </div>
+                
+                
+                <div class="diamond_bottom_border"></div>
+                <div class="single_content">
+                  <img src="./assets/map.webp" alt="Mobile Phone icon" class="simgle_content_icon">
+                  <p class="single_content_text">Jl. Bendungan Hilir No.12, RT.14/RW.3, Bend. Hilir, Kecamatan Tanah Abang, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10210</p>
+                </div>
+               </div>
+               <div class="info_map wow fadeInRight">
+                <iframe class="map_iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7932.820252205298!2d106.8122468081107!3d-6.209513682340241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f74a0c62f12d%3A0xbe50664c5f8ac621!2sSate%20Klathak%20dan%20Bakmi%20Jowo%20Pak%20Jede%2C%20Bendungan%20Hilir!5e0!3m2!1sen!2sbd!4v1718336104151!5m2!1sen!2sbd"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <h3 class="place_name">Kulina Rasa</h3>
+                
+            </div>
+        </div>
+     </div>
+     <div class="footer_top wow fadeIn">
+        <div class="footer_top_container">
+               <h2 class="footer_top_heading">Experience Authentic Indonesian Flavors</h2>
+               <a href="https://gofood.co.id/en/jakarta/restaurant/sate-pak-jede-special-kambing-muda-bendungan-hilir-caaa45a2-0e4b-4244-b227-542502c95131" class="main_button hero_btn footer_button">Grab Food</a>
+        </div>
+     </div>
+     <div class="main_footer">
+        <div class="container footer_container">
+           <a href="/"> <img src="./assets/logo_sate_pak_jede.webp" alt="" class="main_footer_img"></a>
+        <div class="footer_socials">
+            <a href="https://linktr.ee/satepakjede" class="footer_social_ancore">
+                <img src="./assets/linktree.svg" alt="social_icon" class="footer_social_img">
+            </a>
+            <a href="https://www.instagram.com/satepakjede/" class="footer_social_ancore">
+                <img src="./assets/footer-Insta.webp" alt="social_icon" class="footer_social_img">
+            </a>
+           
+        </div>
+        </div>
+     </div>
+     
+     <script>
+        document.getElementById('toggleButton').addEventListener('click', function() {
+            var menu = document.getElementById('mobileMenu');
+            var overlay = document.getElementById('overlay');
+            menu.classList.toggle('show');
+            overlay.classList.toggle('show');
+        });
+        
+        document.getElementById('closeButton').addEventListener('click', function() {
+            var menu = document.getElementById('mobileMenu');
+            var overlay = document.getElementById('overlay');
+            menu.classList.remove('show');
+            overlay.classList.remove('show');
+        });
+        
+        document.getElementById('overlay').addEventListener('click', function() {
+            var menu = document.getElementById('mobileMenu');
+            var overlay = document.getElementById('overlay');
+            menu.classList.remove('show');
+            overlay.classList.remove('show');
+        });
+        </script>
+        
+        
+     <script src="js/wow.min.js"></script>
+                <script>
+                new WOW().init();
+                </script>
 </body>
 </html>
